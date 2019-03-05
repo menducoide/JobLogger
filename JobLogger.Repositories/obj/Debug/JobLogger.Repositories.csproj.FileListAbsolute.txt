@@ -1,0 +1,16 @@
+c:\users\matías\documents\visual studio 2017\Projects\JobLogger\JobLogger.Repositories\bin\Debug\JobLogger.Repositories.dll.config
+c:\users\matías\documents\visual studio 2017\Projects\JobLogger\JobLogger.Repositories\bin\Debug\JobLogger.Repositories.dll
+c:\users\matías\documents\visual studio 2017\Projects\JobLogger\JobLogger.Repositories\bin\Debug\JobLogger.Repositories.pdb
+c:\users\matías\documents\visual studio 2017\Projects\JobLogger\JobLogger.Repositories\bin\Debug\EntityFramework.dll
+c:\users\matías\documents\visual studio 2017\Projects\JobLogger\JobLogger.Repositories\bin\Debug\EntityFramework.SqlServer.dll
+c:\users\matías\documents\visual studio 2017\Projects\JobLogger\JobLogger.Repositories\bin\Debug\JobLogger.Data.dll
+c:\users\matías\documents\visual studio 2017\Projects\JobLogger\JobLogger.Repositories\bin\Debug\JobLogger.IRepositories.dll
+c:\users\matías\documents\visual studio 2017\Projects\JobLogger\JobLogger.Repositories\bin\Debug\JobLogger.Data.pdb
+c:\users\matías\documents\visual studio 2017\Projects\JobLogger\JobLogger.Repositories\bin\Debug\JobLogger.Data.dll.config
+c:\users\matías\documents\visual studio 2017\Projects\JobLogger\JobLogger.Repositories\bin\Debug\JobLogger.IRepositories.pdb
+c:\users\matías\documents\visual studio 2017\Projects\JobLogger\JobLogger.Repositories\bin\Debug\EntityFramework.xml
+c:\users\matías\documents\visual studio 2017\Projects\JobLogger\JobLogger.Repositories\bin\Debug\EntityFramework.SqlServer.xml
+c:\users\matías\documents\visual studio 2017\Projects\JobLogger\JobLogger.Repositories\obj\Debug\JobLogger.Repositories.csprojResolveAssemblyReference.cache
+c:\users\matías\documents\visual studio 2017\Projects\JobLogger\JobLogger.Repositories\obj\Debug\JobLogger.Repositories.csproj.CoreCompileInputs.cache
+c:\users\matías\documents\visual studio 2017\Projects\JobLogger\JobLogger.Repositories\obj\Debug\JobLogger.Repositories.dll
+c:\users\matías\documents\visual studio 2017\Projects\JobLogger\JobLogger.Repositories\obj\Debug\JobLogger.Repositories.pdb

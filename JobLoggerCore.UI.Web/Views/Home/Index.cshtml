@@ -1,0 +1,73 @@
+﻿@using JobLoggerCORE.DataAccessObjects
+@model JobLoggerCORE.DataAccessObjects.DTOLogMessage
+
+
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<link href="~/lib/bootstrap/dist/css/bootstrap.css" rel="stylesheet" />
+<script src="~/lib/bootstrap/dist/js/bootstrap.js"></script>
+
+<br />
+
+<div hidden class="alert alert-success alert-dismissible" id="boxAlert">
+    <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+   <span id="ajaxresult"></span>
+</div>
+
+<form asp-action="Index" asp-controller="Home"
+      data-ajax="true"
+      data-ajax-mode="replace-with"
+      data-ajax-update="#ajaxresult"
+      data-ajax-success="ShowAlert"
+     >
+    <div class="row">
+        <div class="col-lg-8 col-lg-offset-2">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h4>Send Message</h4>
+                </div>
+                <div class="panel-body">
+
+                    <div class="row">
+                        <div class="col-lg-4">
+                            @Html.LabelFor(m => m.Message, new { @class = "control-label" })
+                        </div>
+                        <div class="col-lg-8">
+                            @Html.EditorFor(m => m.Message, new { htmlAttributes = new { @class = "form-control" } })
+                        </div>
+                    </div>
+                    <br />
+                    <div class="row">
+                        <div class="col-lg-4">
+                            @Html.LabelFor(m => m.IdType, new { @class = "control-label" })
+                        </div>
+                        <div class="col-lg-8">
+                            @Html.DropDownListFor(m => m.IdType, ViewBag.Type as SelectList, "Chose ...", new { @class = "form-control" })
+                        </div>
+                    </div>
+                    <br />
+                    <div class="row">
+                        <div class="col-lg-12 text-right">
+                            <button type="submit" class="btn btn-primary">
+                                <i class="glyphicon glyphicon-check"></i>
+                                Send!
+                            </button>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+</form>
+
+<script>
+    function ShowAlert() {
+        $("#boxAlert").show();
+    }
+
+</script>

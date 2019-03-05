@@ -1,0 +1,9 @@
+C:\Users\Matías\Documents\Visual Studio 2017\Projects\JobLogger\JobLoggerCORE.DataAccessObjects\bin\Debug\netcoreapp2.0\JobLoggerCORE.DataAccessObjects.deps.json
+C:\Users\Matías\Documents\Visual Studio 2017\Projects\JobLogger\JobLoggerCORE.DataAccessObjects\bin\Debug\netcoreapp2.0\JobLoggerCORE.DataAccessObjects.dll
+C:\Users\Matías\Documents\Visual Studio 2017\Projects\JobLogger\JobLoggerCORE.DataAccessObjects\obj\Debug\netcoreapp2.0\JobLoggerCORE.DataAccessObjects.csprojResolveAssemblyReference.cache
+C:\Users\Matías\Documents\Visual Studio 2017\Projects\JobLogger\JobLoggerCORE.DataAccessObjects\obj\Debug\netcoreapp2.0\JobLoggerCORE.DataAccessObjects.csproj.CoreCompileInputs.cache
+C:\Users\Matías\Documents\Visual Studio 2017\Projects\JobLogger\JobLoggerCORE.DataAccessObjects\obj\Debug\netcoreapp2.0\JobLoggerCORE.DataAccessObjects.AssemblyInfoInputs.cache
+C:\Users\Matías\Documents\Visual Studio 2017\Projects\JobLogger\JobLoggerCORE.DataAccessObjects\obj\Debug\netcoreapp2.0\JobLoggerCORE.DataAccessObjects.AssemblyInfo.cs
+C:\Users\Matías\Documents\Visual Studio 2017\Projects\JobLogger\JobLoggerCORE.DataAccessObjects\bin\Debug\netcoreapp2.0\JobLoggerCORE.DataAccessObjects.pdb
+C:\Users\Matías\Documents\Visual Studio 2017\Projects\JobLogger\JobLoggerCORE.DataAccessObjects\obj\Debug\netcoreapp2.0\JobLoggerCORE.DataAccessObjects.dll
+C:\Users\Matías\Documents\Visual Studio 2017\Projects\JobLogger\JobLoggerCORE.DataAccessObjects\obj\Debug\netcoreapp2.0\JobLoggerCORE.DataAccessObjects.pdb

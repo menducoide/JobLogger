@@ -1,0 +1,16 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\JobLoggerCORE.Common\JobLoggerCORE.Common.csproj" />
+    <ProjectReference Include="..\JobLoggerCORE.DataAccessObjects\JobLoggerCORE.DataAccessObjects.csproj" />
+    <ProjectReference Include="..\JobLoggerCORE.Data\JobLoggerCORE.Data.csproj" />
+    <ProjectReference Include="..\JobLoggerCORE.IRepositories\JobLoggerCORE.IRepositories.csproj" />
+    <ProjectReference Include="..\JobLoggerCORE.IServices\JobLoggerCORE.IServices.csproj" />
+    <ProjectReference Include="..\JobLoggerCORE.Repositories\JobLoggerCORE.Repositories.csproj" />
+  </ItemGroup>
+
+</Project>

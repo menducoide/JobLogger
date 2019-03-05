@@ -1,0 +1,11 @@
+c:\users\matías\documents\visual studio 2017\Projects\JobLogger\JobLogger.DataAccessObjects\bin\Debug\JobLogger.DataAccessObjects.dll
+c:\users\matías\documents\visual studio 2017\Projects\JobLogger\JobLogger.DataAccessObjects\bin\Debug\JobLogger.DataAccessObjects.pdb
+c:\users\matías\documents\visual studio 2017\Projects\JobLogger\JobLogger.DataAccessObjects\bin\Debug\AutoMapper.dll
+c:\users\matías\documents\visual studio 2017\Projects\JobLogger\JobLogger.DataAccessObjects\bin\Debug\System.ValueTuple.dll
+c:\users\matías\documents\visual studio 2017\Projects\JobLogger\JobLogger.DataAccessObjects\bin\Debug\AutoMapper.pdb
+c:\users\matías\documents\visual studio 2017\Projects\JobLogger\JobLogger.DataAccessObjects\bin\Debug\AutoMapper.xml
+c:\users\matías\documents\visual studio 2017\Projects\JobLogger\JobLogger.DataAccessObjects\bin\Debug\System.ValueTuple.xml
+c:\users\matías\documents\visual studio 2017\Projects\JobLogger\JobLogger.DataAccessObjects\obj\Debug\JobLogger.DataAccessObjects.csproj.CoreCompileInputs.cache
+c:\users\matías\documents\visual studio 2017\Projects\JobLogger\JobLogger.DataAccessObjects\obj\Debug\JobLogger.DataAccessObjects.dll
+c:\users\matías\documents\visual studio 2017\Projects\JobLogger\JobLogger.DataAccessObjects\obj\Debug\JobLogger.DataAccessObjects.pdb
+C:\Users\Matías\Documents\Visual Studio 2017\Projects\JobLogger\JobLogger.DataAccessObjects\obj\Debug\JobLogger.DataAccessObjects.csprojResolveAssemblyReference.cache

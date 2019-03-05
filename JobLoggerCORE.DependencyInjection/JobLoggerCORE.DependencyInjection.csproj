@@ -1,0 +1,19 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Ninject" Version="3.3.4" />
+    <PackageReference Include="Unity" Version="5.9.7" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\JobLoggerCORE.IRepositories\JobLoggerCORE.IRepositories.csproj" />
+    <ProjectReference Include="..\JobLoggerCORE.IServices\JobLoggerCORE.IServices.csproj" />
+    <ProjectReference Include="..\JobLoggerCORE.Repositories\JobLoggerCORE.Repositories.csproj" />
+    <ProjectReference Include="..\JobLoggerCORE.Services\JobLoggerCORE.Services.csproj" />
+  </ItemGroup>
+
+</Project>

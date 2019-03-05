@@ -1,0 +1,6 @@
+c:\users\matías\documents\visual studio 2017\Projects\JobLogger\JobLogger.Common\bin\Debug\JobLogger.Common.dll
+c:\users\matías\documents\visual studio 2017\Projects\JobLogger\JobLogger.Common\bin\Debug\JobLogger.Common.pdb
+c:\users\matías\documents\visual studio 2017\Projects\JobLogger\JobLogger.Common\obj\Debug\JobLogger.Common.csproj.CoreCompileInputs.cache
+c:\users\matías\documents\visual studio 2017\Projects\JobLogger\JobLogger.Common\obj\Debug\JobLogger.Common.dll
+c:\users\matías\documents\visual studio 2017\Projects\JobLogger\JobLogger.Common\obj\Debug\JobLogger.Common.pdb
+C:\Users\Matías\Documents\Visual Studio 2017\Projects\JobLogger\JobLogger.Common\obj\Debug\JobLogger.Common.csprojResolveAssemblyReference.cache

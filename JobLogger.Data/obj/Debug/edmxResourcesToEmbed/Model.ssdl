@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="JobLoggerModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2008" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="LogConfiguration">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="LogToFile" Type="bit" Nullable="false" />
+    <Property Name="LogToDataBase" Type="bit" Nullable="false" />
+    <Property Name="LogToConsole" Type="bit" Nullable="false" />
+    <Property Name="LogError" Type="bit" Nullable="false" />
+    <Property Name="LogWarning" Type="bit" Nullable="false" />
+    <Property Name="LogMessage" Type="bit" Nullable="false" />
+  </EntityType>
+  <EntityType Name="LogMessage">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Message" Type="varchar" MaxLength="500" Nullable="false" />
+    <Property Name="IdType" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Type">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Description" Type="varchar" MaxLength="100" Nullable="false" />
+  </EntityType>
+  <Association Name="FK_LogMessage_Type">
+    <End Role="Type" Type="Self.Type" Multiplicity="1" />
+    <End Role="LogMessage" Type="Self.LogMessage" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Type">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="LogMessage">
+        <PropertyRef Name="IdType" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="JobLoggerModelStoreContainer">
+    <EntitySet Name="LogConfiguration" EntityType="Self.LogConfiguration" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="LogMessage" EntityType="Self.LogMessage" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Type" EntityType="Self.Type" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK_LogMessage_Type" Association="Self.FK_LogMessage_Type">
+      <End Role="Type" EntitySet="Type" />
+      <End Role="LogMessage" EntitySet="LogMessage" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

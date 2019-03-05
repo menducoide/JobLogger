@@ -1,0 +1,11 @@
+C:\Users\Matías\Documents\Visual Studio 2017\Projects\JobLogger\JobLoggerCORE.IRepositories\bin\Debug\netcoreapp2.0\JobLoggerCORE.IRepositories.deps.json
+C:\Users\Matías\Documents\Visual Studio 2017\Projects\JobLogger\JobLoggerCORE.IRepositories\bin\Debug\netcoreapp2.0\JobLoggerCORE.IRepositories.dll
+C:\Users\Matías\Documents\Visual Studio 2017\Projects\JobLogger\JobLoggerCORE.IRepositories\bin\Debug\netcoreapp2.0\JobLoggerCORE.IRepositories.pdb
+C:\Users\Matías\Documents\Visual Studio 2017\Projects\JobLogger\JobLoggerCORE.IRepositories\bin\Debug\netcoreapp2.0\JobLoggerCORE.Data.dll
+C:\Users\Matías\Documents\Visual Studio 2017\Projects\JobLogger\JobLoggerCORE.IRepositories\bin\Debug\netcoreapp2.0\JobLoggerCORE.Data.pdb
+C:\Users\Matías\Documents\Visual Studio 2017\Projects\JobLogger\JobLoggerCORE.IRepositories\obj\Debug\netcoreapp2.0\JobLoggerCORE.IRepositories.csprojResolveAssemblyReference.cache
+C:\Users\Matías\Documents\Visual Studio 2017\Projects\JobLogger\JobLoggerCORE.IRepositories\obj\Debug\netcoreapp2.0\JobLoggerCORE.IRepositories.csproj.CoreCompileInputs.cache
+C:\Users\Matías\Documents\Visual Studio 2017\Projects\JobLogger\JobLoggerCORE.IRepositories\obj\Debug\netcoreapp2.0\JobLoggerCORE.IRepositories.AssemblyInfoInputs.cache
+C:\Users\Matías\Documents\Visual Studio 2017\Projects\JobLogger\JobLoggerCORE.IRepositories\obj\Debug\netcoreapp2.0\JobLoggerCORE.IRepositories.AssemblyInfo.cs
+C:\Users\Matías\Documents\Visual Studio 2017\Projects\JobLogger\JobLoggerCORE.IRepositories\obj\Debug\netcoreapp2.0\JobLoggerCORE.IRepositories.dll
+C:\Users\Matías\Documents\Visual Studio 2017\Projects\JobLogger\JobLoggerCORE.IRepositories\obj\Debug\netcoreapp2.0\JobLoggerCORE.IRepositories.pdb

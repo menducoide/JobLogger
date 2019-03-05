@@ -1,0 +1,169 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="JobLoggerModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2008" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="LogConfiguration">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="LogToFile" Type="bit" Nullable="false" />
+          <Property Name="LogToDataBase" Type="bit" Nullable="false" />
+          <Property Name="LogToConsole" Type="bit" Nullable="false" />
+          <Property Name="LogError" Type="bit" Nullable="false" />
+          <Property Name="LogWarning" Type="bit" Nullable="false" />
+          <Property Name="LogMessage" Type="bit" Nullable="false" />
+        </EntityType>
+        <EntityType Name="LogMessage">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Message" Type="varchar" MaxLength="500" Nullable="false" />
+          <Property Name="IdType" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Type">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Description" Type="varchar" MaxLength="100" Nullable="false" />
+        </EntityType>
+        <Association Name="FK_LogMessage_Type">
+          <End Role="Type" Type="Self.Type" Multiplicity="1" />
+          <End Role="LogMessage" Type="Self.LogMessage" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Type">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="LogMessage">
+              <PropertyRef Name="IdType" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="JobLoggerModelStoreContainer">
+          <EntitySet Name="LogConfiguration" EntityType="Self.LogConfiguration" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="LogMessage" EntityType="Self.LogMessage" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Type" EntityType="Self.Type" Schema="dbo" store:Type="Tables" />
+          <AssociationSet Name="FK_LogMessage_Type" Association="Self.FK_LogMessage_Type">
+            <End Role="Type" EntitySet="Type" />
+            <End Role="LogMessage" EntitySet="LogMessage" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="JobLoggerModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="LogMessage">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Message" Type="String" MaxLength="500" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="IdType" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="Type" Relationship="Self.FK_LogMessage_Type" FromRole="LogMessage" ToRole="Type" />
+        </EntityType>
+        <EntityType Name="Type">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Description" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+          <NavigationProperty Name="LogMessage" Relationship="Self.FK_LogMessage_Type" FromRole="Type" ToRole="LogMessage" />
+        </EntityType>
+        <Association Name="FK_LogMessage_Type">
+          <End Role="Type" Type="Self.Type" Multiplicity="1" />
+          <End Role="LogMessage" Type="Self.LogMessage" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Type">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="LogMessage">
+              <PropertyRef Name="IdType" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="JobLoggerEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="LogMessage" EntityType="Self.LogMessage" />
+          <EntitySet Name="Type" EntityType="Self.Type" />
+          <AssociationSet Name="FK_LogMessage_Type" Association="Self.FK_LogMessage_Type">
+            <End Role="Type" EntitySet="Type" />
+            <End Role="LogMessage" EntitySet="LogMessage" />
+          </AssociationSet>
+          <EntitySet Name="LogConfiguration" EntityType="JobLoggerModel.LogConfiguration" />
+        </EntityContainer>
+        <EntityType Name="LogConfiguration">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="LogToFile" Type="Boolean" Nullable="false" />
+          <Property Name="LogToDataBase" Type="Boolean" Nullable="false" />
+          <Property Name="LogToConsole" Type="Boolean" Nullable="false" />
+          <Property Name="LogError" Type="Boolean" Nullable="false" />
+          <Property Name="LogWarning" Type="Boolean" Nullable="false" />
+          <Property Name="LogMessage" Type="Boolean" Nullable="false" />
+        </EntityType>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="JobLoggerModelStoreContainer" CdmEntityContainer="JobLoggerEntities">
+          <EntitySetMapping Name="LogMessage">
+            <EntityTypeMapping TypeName="JobLoggerModel.LogMessage">
+              <MappingFragment StoreEntitySet="LogMessage">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="Message" ColumnName="Message" />
+                <ScalarProperty Name="IdType" ColumnName="IdType" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Type">
+            <EntityTypeMapping TypeName="JobLoggerModel.Type">
+              <MappingFragment StoreEntitySet="Type">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="Description" ColumnName="Description" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="LogConfiguration">
+            <EntityTypeMapping TypeName="JobLoggerModel.LogConfiguration">
+              <MappingFragment StoreEntitySet="LogConfiguration">
+                <ScalarProperty Name="LogMessage" ColumnName="LogMessage" />
+                <ScalarProperty Name="LogWarning" ColumnName="LogWarning" />
+                <ScalarProperty Name="LogError" ColumnName="LogError" />
+                <ScalarProperty Name="LogToConsole" ColumnName="LogToConsole" />
+                <ScalarProperty Name="LogToDataBase" ColumnName="LogToDataBase" />
+                <ScalarProperty Name="LogToFile" ColumnName="LogToFile" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="false" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

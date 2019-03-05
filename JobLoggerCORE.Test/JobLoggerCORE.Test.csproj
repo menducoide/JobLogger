@@ -1,0 +1,27 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+
+    <IsPackable>false</IsPackable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="15.3.0" />
+    <PackageReference Include="Moq" Version="4.10.1" />
+    <PackageReference Include="MSTest.TestAdapter" Version="1.1.18" />
+    <PackageReference Include="MSTest.TestFramework" Version="1.1.18" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\JobLoggerCORE.Common\JobLoggerCORE.Common.csproj" />
+    <ProjectReference Include="..\JobLoggerCORE.DataAccessObjects\JobLoggerCORE.DataAccessObjects.csproj" />
+    <ProjectReference Include="..\JobLoggerCORE.Data\JobLoggerCORE.Data.csproj" />
+    <ProjectReference Include="..\JobLoggerCORE.DependencyInjection\JobLoggerCORE.DependencyInjection.csproj" />
+    <ProjectReference Include="..\JobLoggerCORE.IRepositories\JobLoggerCORE.IRepositories.csproj" />
+    <ProjectReference Include="..\JobLoggerCORE.IServices\JobLoggerCORE.IServices.csproj" />
+    <ProjectReference Include="..\JobLoggerCORE.Repositories\JobLoggerCORE.Repositories.csproj" />
+    <ProjectReference Include="..\JobLoggerCORE.Services\JobLoggerCORE.Services.csproj" />
+  </ItemGroup>
+
+</Project>
