@@ -121,7 +121,7 @@ namespace JobLogger.Test
             logMessageService.LogMessage(messageToSend, idType);
             Assert.IsTrue(countLogMessageService< logMessageService.List().Count);
             Assert.IsTrue(File.Exists(logFileDirectory + "LogFile" + DateTime.Now.ToString("yyyyMMdd") + ".txt"));
-            Assert.IsTrue(Console.In.ReadToEnd().Equals(DateTime.Now.ToShortDateString() + messageToSend));
+           
 
         }
 
